@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Syahdan</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0a0a0a;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    /* Welcome Section */
+    .welcome {
+      animation: fadeOut 1s ease forwards;
+      animation-delay: 4s;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: linear-gradient(270deg, #4b0082, #800080, #8a2be2);
+      background-size: 600% 600%;
+      animation: bgMove 10s ease infinite, fadeOut 1s ease forwards 4s;
+    }
+
+    .welcome h1 {
+      font-size: 2rem;
+      color: #e0b3ff;
+      text-shadow: 0 0 15px rgba(255,255,255,0.5);
+    }
+
+    /* About Section */
+    .about {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 5s;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      color: #e0b3ff;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin-top: 1rem;
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    /* Foto Profil */
+    .about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 1.5rem;
+      border: 3px solid #8a2be2;
+      object-fit: cover;
+    }
+
+    /* Buttons */
+    .buttons {
+      margin-top: 1.5rem;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 10px;
+      margin: 0 0.5rem;
+      background: #6a0dad;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background: #8a2be2;
+    }
+
+    /* Animations */
+    @keyframes bgMove {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Welcome Section -->
+  <section class="welcome">
+    <h1>Welcome To My <br> Portfolio Website</h1>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>Hello, I'm <br> Syahdan Al Farizi</h2>
+    <p><b>
+      Saya adalah siswa jenjang kelas 6 yang sebentar lagi naik ke jenjang SMP. 
+      Saya sangat amat tertarik dengan Pengembangan AI dll. 
+      Saya berfokus pada menciptakan pengalaman digital yang menarik dan seru 
+      serta selalu memberikan solusi terbaik dalam setiap projek Web, AI, dll.
+    </p></b>
+    <img src="zenitsu.jpg" alt="Foto Profil">
+    <div class="buttons">
+    </div>
+  </section>
+
+</body>
+</html>
